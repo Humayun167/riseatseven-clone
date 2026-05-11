@@ -28,7 +28,7 @@ const logos = [
   { name: "JD", src: assets.logo4 },
 ];
 
-export default function LogoSwipe() {
+export default function LogoCloud() {
   const swiperRef = useRef(null);
   const [isPaused, setIsPaused] = useState(false);
 
@@ -85,7 +85,9 @@ export default function LogoSwipe() {
             >
               {logos.map((logo, index) => (
                 <SwiperSlide key={`${logo.name}-${index}`} style={{ width: "auto" }}>
-                  <div className="h-14 aspect-[20/9] rounded-xl flex items-center justify-center text-white font-bold text-lg pointer-events-none">
+                  <div
+                    className="h-14 aspect-[20/9] rounded-xl flex items-center justify-center text-white font-bold text-lg pointer-events-none"
+                  >
                     <img src={logo.src} alt={logo.name} className="w-full h-full object-contain" />
                   </div>
                 </SwiperSlide>
@@ -129,7 +131,9 @@ export default function LogoSwipe() {
             >
               {logos.map((logo, index) => (
                 <SwiperSlide key={`${logo.name}-${index}`} style={{ width: "auto" }}>
-                  <div className="h-12 aspect-[20/9] rounded-xl flex items-center justify-center text-white font-bold text-base">
+                  <div
+                    className="h-12 aspect-[20/9] rounded-xl flex items-center justify-center text-white font-bold text-base"
+                  >
                     <img src={logo.src} alt={logo.name} className="w-full h-full object-contain" />
                   </div>
                 </SwiperSlide>

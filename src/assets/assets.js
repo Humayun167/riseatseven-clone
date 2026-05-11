@@ -18,6 +18,14 @@ import logo8 from './brand-logos/shark-ninja.webp'
 import logo9 from './brand-logos/sixt.webp'
 import logo10 from './brand-logos/xbox.webp'
 
+import work1 from './feature-work/work (1).png'
+import work2 from './feature-work/work (2).png'
+import work3 from './feature-work/work (3).png'
+import work4 from './feature-work/work (4).png'
+import work5 from './feature-work/work (5).png'
+import work6 from './feature-work/work (6).png'
+import work7 from './feature-work/work (7).png'
+
 export const assets = {
     hero1,
     hero2,
@@ -38,4 +46,11 @@ export const assets = {
     logo8,
     logo9,
     logo10,
+    work1,
+    work2,
+    work3,
+    work4,
+    work5,
+    work6,
+    work7,
 };
