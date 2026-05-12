@@ -2,56 +2,67 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router";
 import { gsap } from "gsap";
 import { motion, AnimatePresence } from "framer-motion";
+import { assets } from "../assets/assets";
 
 const navItems = [
   {
     label: "Services",
     href: "/services/",
-    previewImage: "/work-images/work-1.jpg",
+    previewImage: assets.work1,
     children: [
-      { label: "Search & Growth Strategy", href: "#", previewImage: "/work-images/work-2.jpg" },
-      { label: "Onsite SEO", href: "#", previewImage: "/work-images/work-3.jpg" },
-      { label: "Content Experience", href: "#", previewImage: "/work-images/work-1.jpg" },
-      { label: "B2B Marketing", href: "#", previewImage: "/work-images/work-4.jpg" },
-      { label: "Digital PR", href: "#", previewImage: "/work-images/work-3.jpg" },
-      { label: "Social Media & Campaigns", href: "#", previewImage: "/work-images/work-1.jpg" },
-      { label: "Data & Insights", href: "#", previewImage: "/work-images/work-4.jpg" },
-      { label: "Social SEO/Search", href: "#", previewImage: "/work-images/work-2.jpg" },
+      { label: "Search & Growth Strategy", href: "#", previewImage: assets.work2 },
+      { label: "Onsite SEO", href: "#", previewImage: assets.work3 },
+      { label: "Content Experience", href: "#", previewImage: assets.work1 },
+      { label: "B2B Marketing", href: "#", previewImage: assets.work4 },
+      { label: "Digital PR", href: "#", previewImage: assets.work3 },
+      { label: "Social Media & Campaigns", href: "#", previewImage: assets.work1 },
+      { label: "Data & Insights", href: "#", previewImage: assets.work4 },
+      { label: "Social SEO/Search", href: "#", previewImage: assets.work2 },
     ],
   },
   {
     label: "Industries",
     href: "/industries/",
-    previewImage: "/work-images/work-4.jpg",
+    previewImage: assets.work4,
     children: [
-      { label: "B2B Marketing", href: "#", previewImage: "/work-images/work-3.jpg" },
+      { label: "B2B Marketing", href: "#", previewImage: assets.work3 },
     ],
   },
   {
     label: "International",
     href: "/international/",
-    previewImage: "/work-images/work-2.jpg",
+    previewImage: assets.work2,
     children: [
-      { label: "US Digital PR", href: "#", previewImage: "/work-images/work-2.jpg" },
-      { label: "Spain Digital PR", href: "#", previewImage: "/work-images/work-3.jpg" },
-      { label: "Germany Digital PR", href: "#", previewImage: "/work-images/work-1.jpg" },
-      { label: "Netherlands Digital PR", href: "#", previewImage: "/work-images/work-4.jpg" },
+      { label: "US Digital PR", href: "#", previewImage: assets.work2 },
+      { label: "Spain Digital PR", href: "#", previewImage: assets.work3 },
+      { label: "Germany Digital PR", href: "#", previewImage: assets.work1 },
+      { label: "Netherlands Digital PR", href: "#", previewImage: assets.work4 },
     ],
   },
   {
     label: "About",
     href: "/about/",
-    previewImage: "/work-images/work-1.jpg",
+    previewImage: assets.awards2,
     children: [
-      { label: "About Us", href: "#", previewImage: "/work-images/work-2.jpg" },
-      { label: "Meet The Risers", href: "#", previewImage: "/work-images/work-1.jpg" },
-      { label: "Culture", href: "#", previewImage: "/work-images/work-4.jpg" },
-      { label: "Testimonials", href: "#", previewImage: "/work-images/work-3.jpg" },
+      { label: "About Us", href: "#", previewImage: assets.work3 },
+      { label: "Meet The Risers", href: "#", previewImage: assets.work1 },
+      { label: "Culture", href: "#", previewImage: assets.work4 },
+      { label: "Testimonials", href: "#", previewImage: assets.work3 },
     ],
   },
   { label: "Work", href: "/work/" },
   { label: "Careers", href: "/careers/" },
-  { label: "Blog", href: "/blog/" },
+{
+    label: "Blog and Resources",
+    href: "/about/",
+    previewImage: assets.work5,
+    children: [
+      { label: "About Us", href: "#", previewImage: assets.work2 },
+      { label: "Meet The Risers", href: "#", previewImage: assets.work1 },
+      { label: "Culture", href: "#", previewImage: assets.work4 },
+      { label: "Testimonials", href: "#", previewImage: assets.work3 },
+    ],
+  },
   { label: "Contact", href: "/contact/" },
 ];
 
@@ -198,27 +209,27 @@ export default function Navbar() {
   return (
     <>
       {/* Announcement Bar */}
-      <div
-        className={`pt-2.5 px-2.5 w-full transition-all duration-500 ${mobileMenu ? "opacity-0 pointer-events-none" : "opacity-100 pointer-events-auto"
-          } ${hideAnnouncement ? "h-0 overflow-hidden py-0" : ""}`}
-      >
-        <a
-          href="/multi-channel-search-report-2026/"
-          className="group flex justify-center z-60 relative items-center text-xs w-full py-2 px-5 text-balance text-center tracking-tight leading-none font-semibold rounded-2xl transition transition-rounded lg:text-sm text-grey-900 bg-mint"
-        >
-          <span className="block mt-0.5 lg:hidden">
-            🚨 The Category Leaderboard - Live Now
-          </span>
-          <span className="relative overflow-hidden mt-0.5 hidden lg:block">
-            <span className="transition inline-block pointer-fine:group-hover:-translate-y-6">
-              🚨 The Category Leaderboard - Live Now
-            </span>
-            <span className="transition absolute top-0 left-0 translate-y-6 pointer-fine:group-hover:translate-y-0">
-              🚨 The Category Leaderboard - Live Now
-            </span>
-          </span>
-        </a>
-      </div>
+        <div
+             className={`pt-2.5 px-2.5 w-full transition-all duration-500 ${mobileMenu ? "opacity-0 pointer-events-none" : "opacity-100 pointer-events-auto"
+               } ${hideAnnouncement ? "h-0 overflow-hidden py-0" : ""}`}
+           >
+             <Link
+               href="/multi-channel-search-report-2026/"
+               className="group flex justify-center z-[60] relative items-center text-xs w-full py-2 px-5 text-balance text-center tracking-tight leading-none font-semibold rounded-2xl transition transition-rounded lg:text-sm text-grey-900 bg-mint"
+             >
+               <span className="block mt-0.5 lg:hidden">
+                 🚨 The Category Leaderboard - Live Now
+               </span>
+               <span className="relative overflow-hidden mt-0.5 hidden lg:block">
+                 <span className="transition inline-block pointer-fine:group-hover:-translate-y-6">
+                   🚨 The Category Leaderboard - Live Now
+                 </span>
+                 <span className="transition absolute top-0 left-0 translate-y-6 pointer-fine:group-hover:translate-y-0">
+                   🚨 The Category Leaderboard - Live Now
+                 </span>
+               </span>
+             </Link>
+           </div>
 
       {/* Navbar container */}
       <div

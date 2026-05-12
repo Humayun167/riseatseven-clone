@@ -10,6 +10,9 @@ import FeaturedWork from './components/FeaturedWork'
 import OurServices from './components/OurServices'
 import ScrollingHero from './components/ScrollingHero'
 import ShowcaseCard from './components/ShowcaseCard'
+import WhatsNew from './components/WhatsNew'
+import CTASection from './components/CTASection'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
       <OurServices/>
       <ScrollingHero/>
       <ShowcaseCard/>
+        <WhatsNew/>
+        <CTASection/>
+        <Footer/>
     </>
   )
 }

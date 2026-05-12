@@ -11,7 +11,7 @@ export default {
         'grey-500': '#888888',
         'grey-300': '#cccccc',
         'grey-200': '#d9d9d9',
-        'mint': '#b3ffb3',
+        'mint': '#b2f6e3',
       },
       spacing: {
         '62.5': '250px',

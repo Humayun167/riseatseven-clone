@@ -26,6 +26,11 @@ import work5 from './feature-work/work (5).png'
 import work6 from './feature-work/work (6).png'
 import work7 from './feature-work/work (7).png'
 
+import whatsNewHeader from './whats-new/header.webp'
+import whatsNew1 from './whats-new/wn-1.jpg'
+import whatsNew2 from './whats-new/wn-2.webp'
+import whatsNew3 from './whats-new/wn-3.webp'
+
 
 export const assets = {
     hero1,
@@ -54,4 +59,8 @@ export const assets = {
     work5,
     work6,
     work7,
+    whatsNewHeader,
+    whatsNew1,
+    whatsNew2,
+    whatsNew3,
 };
