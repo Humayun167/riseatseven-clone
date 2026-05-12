@@ -26,6 +26,7 @@ import work5 from './feature-work/work (5).png'
 import work6 from './feature-work/work (6).png'
 import work7 from './feature-work/work (7).png'
 
+
 export const assets = {
     hero1,
     hero2,
