@@ -88,18 +88,4 @@ npm install
 npm run dev
 ```
 
-## 🚀 Deployment
 
-Deployment options: Vercel, Netlify, or traditional hosting. See [DOCUMENTATION.md](./DOCUMENTATION.md) for details.
-
-## 📝 License
-
-This project is open source. Check LICENSE file for details.
-
-## 👨‍💻 Author
-
-**Humayun167** - [GitHub](https://github.com/Humayun167)
-
----
-
-For detailed information, see the [documentation files](./DOCUMENTATION.md).
