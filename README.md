@@ -2,6 +2,8 @@
 
 An AWWWARDS-winning website recreation built with **React**, **Vite**, and **Tailwind CSS**. Features smooth animations, responsive design, and modern UI components.
 
+This is a recreation/clone of **[Rise at Seven](https://riseatseven.com/)** - a digital marketing agency website.
+
 ## 🌐 Live Demo
 
 **[View Live Site](https://riseatseven-clone.vercel.app/)** - https://riseatseven-clone.vercel.app/
